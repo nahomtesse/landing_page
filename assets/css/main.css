@@ -3039,6 +3039,29 @@ input, select, textarea {
 
 	}
 
+	.blog-promo {
+		text-align: center;
+		padding: 20px;
+		background-color: #f4f4f4;
+		border-radius: 10px;
+		margin-top: 30px;
+	}
+	
+	.blog-promo .button {
+		background-color: #FFD700; /* Golden color */
+		color: black;
+		font-size: 18px;
+		padding: 10px 25px;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	.blog-promo .button:hover {
+		background-color: #FFA500;
+	}
+	
+
 /* Medium */
 
 	@media screen and (max-width: 980px) {
