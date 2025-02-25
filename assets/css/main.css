@@ -3039,6 +3039,33 @@ input, select, textarea {
 
 	}
 
+	.blog-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	  }
+	  
+	  .blog-list li {
+		background-color: #fff;
+		margin-bottom: 15px;
+		padding: 15px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+	  }
+	  
+	  .blog-list li:hover {
+		background-color: #f4f4f4;
+	  }
+	  
+	  /* Blog link styling */
+	  .blog-list li a {
+		text-decoration: none;
+		color: #333;
+		font-size: 18px;
+		display: block;
+	  }
+
 	.blog-promo {
 		text-align: center;
 		padding: 20px;
