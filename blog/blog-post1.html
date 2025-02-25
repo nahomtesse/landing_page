@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeetCode Challenge: Two Sum Explained (Java)</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
   <div class="blog-container">
@@ -16,31 +16,27 @@
 
       <button id="copyButton" class="button">Copy Code</button>
       <pre id="codeBlock">
-<code>
-    public class TwoSum {
-        public static int[] twoSum(int[] nums, int target) {
-            java.util.Map<Integer, Integer> map = new java.util.HashMap<>();
+    <code>
+        import java.util.HashMap;
+        public int[] twoSum(int[] nums, int target) {
+            HashMap<Integer, Integer> map = new HashMap<>();
+  
             for (int i = 0; i < nums.length; i++) {
                 int complement = target - nums[i];
+        
                 if (map.containsKey(complement)) {
-                    return new int[]{map.get(complement), i};
+                    return new int[]{map.get(complement), i}; 
                 }
-                map.put(nums[i], i);
+        
+                map.put(nums[i], i); 
             }
-            return new int[]{};
+            
+            return new int[]{}; 
         }
-
-        public static void main(String[] args) {
-            int[] numbers = {2, 7, 11, 15};
-            int target = 9;
-            int[] result = twoSum(numbers, target);
-            System.out.println("Indices: " + result[0] + ", " + result[1]);
-        }
-    }
-</code>
+    </code>
       </pre>
 
-      <p>More detailed explanation goes here...</p>
+      <p>Instead of checking all pairs, we can store numbers we have seen in a HashMap and check if the complement (target - nums[i]) already exists.</p>
     </article>
 
     <div class="post-navigation">
@@ -49,6 +45,6 @@
   </div>
 
   <!-- Include external JavaScript for the copy functionality -->
-  <script src="../assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
